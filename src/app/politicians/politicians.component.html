@@ -1,0 +1,4 @@
+<app-tree-component [data]="data" [template]="treeTemplate"></app-tree-component>
+<ng-template #treeTemplate let-node>
+    {{node.data.id}}
+  </ng-template>

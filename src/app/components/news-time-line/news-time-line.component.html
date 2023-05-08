@@ -1,0 +1,27 @@
+<div class="timeline-area">
+	<div class="container">
+		<div class="timelines">
+			<h2>Timelines</h2>
+		</div>
+		<div class="all-timelines">
+
+			<!--SINGLE TIMELINE-->
+			<div class="single-timeline d-flex-2" *ngFor="let i of [1, 2, 3, 5, 6, 7, 8, 9, 10]; let j = index;">
+				<div class="timeline-blank"></div>
+				<div class="timeline-text d-flex-2">
+					<span>
+						<h6 *ngIf="j%2==0;">April 201{{i}}</h6>
+                        <h6 *ngIf="j%2!=0;">April 201{{i}}</h6> 
+                        <br> 
+
+                        — The launch of Aryacoin; AYA ICO, resulting in over 30BTC collected
+                        <br>
+                        <small style="font-size: smaller;">Times of India</small>
+
+					</span>
+					<div class="t-square"></div>
+				</div>
+			</div>
+
+		</div>
+	</div>

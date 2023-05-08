@@ -1,0 +1,13 @@
+*{
+    padding-left: 5rem;
+}
+
+.basic-grid{
+    display : inline-grid;
+    overflow: scroll;
+    gap : 0.5rem;
+    text-align : center;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-columns : repeat(10, 1fr); */
+    grid-template-columns : repeat(auto-fit, minmax(240px, 1fr));
+}

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../src/assets/fonts/Roboto/Roboto-Light.ttf');
+}
+
+* {
+    font-size: 16px;
+    --text-primary : #b6b6b6;
+    --text-secondary : #ececec;
+    --bg-primary : #23232e;
+    --bg-secondary : #141418;
+    --transition-speed : 600ms;
+    /*Disabling selection accross application*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    color : black;
+    background-color : white;
+    margin: 0;
+    padding: 0;
+}
+ 
+
+/*Side scrollbar*/
+body::-webkit-scrollbar {
+    width : 0.25rem;
+}
+body::-webkit-scrollbar-track {
+    background : #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+    background : #6649b8;
+}
+
+.fa-primary {
+    color : #ff7eee;
+  }
+  
+.fa-secondary {
+   color : #df49a6;
+}
+
+.fa-primary
+.fa-secondary {
+    transition : var(--transition-speed);
+}

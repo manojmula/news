@@ -1,0 +1,11 @@
+<table>
+    <tr *ngIf="listOfStates.length != 0" class="card" (click)="changeLocation()">
+        <td></td>
+        <td>Filter By Location<img src="assets/images/placeholder.png" alt="" class="placeholder-image"></td>
+
+    </tr>
+    <tr class="card" *ngFor="let news of headlines" (click)="navigateToPage(news.link)">
+        <td >{{ news.title }} </td>
+        <td> <img src="/assets/images/clock.png" alt="Time Logo" class="time-image"> {{ news.published | date }}</td>
+    </tr>
+</table>
